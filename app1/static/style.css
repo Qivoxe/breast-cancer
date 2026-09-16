@@ -15,48 +15,102 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================
-   CONTAINER
-========================= */
-
 .container {
-    width: 90%;
+    width: 92%;
     max-width: 1100px;
     margin: 40px auto;
 }
 
 
 /* =========================
-   HEADER
+   HERO
 ========================= */
 
-header {
+.hero {
     background: white;
-    padding: 35px;
-    border-radius: 16px;
+    padding: 45px;
+    border-radius: 20px;
     margin-bottom: 25px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #2563eb;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    line-height: 1.15;
     color: #111827;
+    margin-bottom: 15px;
 }
 
-header p {
+.hero h1 span {
+    color: #2563eb;
+}
+
+.subtitle {
+    max-width: 700px;
     color: #6b7280;
-    margin-bottom: 15px;
+    font-size: 17px;
+    margin-bottom: 20px;
 }
 
 .warning {
     display: inline-block;
     background: #fff7ed;
     color: #c2410c;
+    border: 1px solid #fed7aa;
     padding: 10px 14px;
-    border-radius: 8px;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.actions button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 9px;
     font-size: 14px;
+    font-weight: 700;
+}
+
+.secondary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: #1d4ed8;
+}
+
+.reset-btn {
+    background: white;
+    color: #374151;
+    border: 1px solid #d1d5db !important;
+}
+
+.reset-btn:hover {
+    background: #f9fafb;
 }
 
 
@@ -66,16 +120,33 @@ header p {
 
 .section {
     background: white;
-    padding: 30px;
+    padding: 32px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
     margin-bottom: 25px;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-number {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 5px;
 }
 
 .section h2 {
-    margin-bottom: 25px;
     font-size: 24px;
     color: #111827;
+    margin-bottom: 4px;
+}
+
+.section-header p {
+    color: #9ca3af;
+    font-size: 14px;
 }
 
 
@@ -95,85 +166,196 @@ header p {
 }
 
 .input-group label {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
     color: #374151;
+    margin-bottom: 7px;
 }
 
 .input-group input {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid #d1d5db;
-    border-radius: 8px;
+    border-radius: 9px;
+    background: #fafafa;
     font-size: 15px;
+    color: #111827;
     outline: none;
-    transition: 0.2s;
+    transition: all 0.2s ease;
+}
+
+.input-group input:hover {
+    border-color: #9ca3af;
 }
 
 .input-group input:focus {
+    background: white;
     border-color: #2563eb;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
 
 /* =========================
-   BUTTON
+   PREDICT BUTTON
 ========================= */
 
-button {
+.predict-btn {
     width: 100%;
-    padding: 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 17px;
     background: #2563eb;
     color: white;
     font-size: 17px;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.2s;
-    margin-bottom: 25px;
+    transition: all 0.2s ease;
+    margin-bottom: 30px;
 }
 
-button:hover {
+.predict-btn:hover {
     background: #1d4ed8;
+    transform: translateY(-1px);
 }
 
-button:disabled {
-    background: #9ca3af;
+.predict-btn:disabled {
+    background: #93c5fd;
     cursor: not-allowed;
+    transform: none;
 }
 
 
 /* =========================
-   RESULT
+   RESULT CARD
 ========================= */
 
 .result {
     background: white;
-    padding: 30px;
-    border-radius: 16px;
+    padding: 40px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    margin-bottom: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    border: 2px solid #e5e7eb;
+}
+
+.result-label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #6b7280;
+    margin-bottom: 12px;
 }
 
 .result h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 38px;
+    margin-bottom: 8px;
 }
 
-.result p {
+.result-description {
     color: #6b7280;
-    font-size: 17px;
+    margin-bottom: 30px;
 }
 
-.result strong {
+
+/* =========================
+   BENIGN RESULT
+========================= */
+
+.result.benign {
+    border-color: #86efac;
+    background: #f0fdf4;
+}
+
+.result.benign h2 {
+    color: #15803d;
+}
+
+
+/* =========================
+   MALIGNANT RESULT
+========================= */
+
+.result.malignant {
+    border-color: #fca5a5;
+    background: #fef2f2;
+}
+
+.result.malignant h2 {
+    color: #dc2626;
+}
+
+
+/* =========================
+   PROBABILITY
+========================= */
+
+.probability-container {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.probability-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.probability-header strong {
+    font-size: 18px;
     color: #111827;
 }
 
+.progress {
+    width: 100%;
+    height: 12px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #2563eb;
+    border-radius: 20px;
+    transition: width 0.7s ease;
+}
+
+
+/* =========================
+   RESULT NOTE
+========================= */
+
+.result-note {
+    font-size: 12px;
+    color: #9ca3af;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+    padding: 20px;
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 
@@ -188,19 +370,35 @@ button:disabled {
         margin: 20px auto;
     }
 
-    header {
-        padding: 25px;
+    .hero {
+        padding: 28px;
     }
 
-    header h1 {
-        font-size: 28px;
+    .hero h1 {
+        font-size: 32px;
     }
 
     .section {
-        padding: 22px;
+        padding: 23px;
     }
 
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+    }
+
+    .result {
+        padding: 30px 20px;
+    }
+
+    .result h2 {
+        font-size: 32px;
     }
 }
