@@ -375,13 +375,13 @@ breast-cancer-prediction/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/breast-cancer-prediction.git
+git clone https://github.com/Qivoxe/breast-cancer.git
 ```
 
 Move into the project:
 
 ```bash
-cd breast-cancer-prediction
+cd breast-cancer-prediction-model
 ```
 
 Create a virtual environment:
