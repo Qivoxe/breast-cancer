@@ -493,4 +493,13 @@ Data → Analysis → Modeling → Validation → Tuning
                      Frontend
 ```
 
+
+## 🌐 Live Demo
+
+Try the Live Application=https://breast-cancer-1-hsnd.onrender.com/
+
+## 📚 API Documentation
+
+[Open API Docs](https://breast-cancer-1-hsnd.onrender.com/docs)
+
 It combines machine learning, backend development, and frontend engineering into a single deployable application.
